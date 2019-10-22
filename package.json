@@ -1,0 +1,74 @@
+{
+  "name": "@hiver/type-script-template",
+  "version": "0.0.12",
+  "description": "Hiver TypeScript Template Library",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "test": "jest",
+    "watch": "jest --watchAll",
+    "build": "tsc",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+    "lint": "tslint -p tsconfig.json",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test && npm run lint",
+    "preversion": "npm run lint; typedoc --out docs src",
+    "version": "npm run format && git add -A src && touch docs/.nojekyll &&git add -A docs",
+    "postversion": "git push && git push --tags",
+    "serve": "lite-server",
+    "localw": "webpack --config webpack.config.js --watch",
+    "pretty-quick": "pretty-quick"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GrexIt/type-script-template.git"
+  },
+  "keywords": [
+    "Template",
+    "TypeScript",
+    "JavaScript"
+  ],
+  "author": "anurag",
+  "license": "Hiver",
+  "bugs": {
+    "url": "https://github.com/GrexIt/type-script-template/issues"
+  },
+  "homepage": "https://grexit.github.io/type-script-template/",
+  "devDependencies": {
+    "@babel/core": "^7.6.4",
+    "@babel/preset-env": "^7.6.3",
+    "@babel/preset-react": "^7.6.3",
+    "@types/jest": "^22.2.3",
+    "@types/react": "^16.9.9",
+    "@types/react-dom": "^16.9.2",
+    "@types/react-test-renderer": "^16.9.1",
+    "babel-jest": "^24.9.0",
+    "codecov": "^3.1.0",
+    "husky": "^3.0.4",
+    "jest": "^23.6.0",
+    "jest-localstorage-mock": "^2.4.0",
+    "lite-server": "^2.5.4",
+    "prettier": "^1.13.2",
+    "pretty-quick": "^1.11.1",
+    "react-test-renderer": "^16.10.2",
+    "ts-jest": "^22.4.6",
+    "ts-loader": "^6.0.4",
+    "tslint": "^5.10.0",
+    "tslint-config-airbnb": "^5.11.1",
+    "tslint-config-prettier": "^1.13.0",
+    "tslint-react": "^4.0.0",
+    "typescript": "^2.9.2"
+  },
+  "files": [
+    "lib/**/*"
+  ],
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm test;pretty-quick --staged"
+    }
+  },
+  "dependencies": {
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2"
+  }
+}

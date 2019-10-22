@@ -1,0 +1,229 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>@hiver/type-script-template</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="assets/js/search.js" data-base=".">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="index.html" class="title">@hiver/type-script-template</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="globals.html">Globals</a>
+				</li>
+			</ul>
+			<h1> @hiver/type-script-template</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<div class="tsd-panel tsd-typography">
+				<a href="#typescript-template" id="typescript-template" style="color: inherit; text-decoration: none;">
+					<h1>TypeScript Template</h1>
+				</a>
+				<p>This repository can be used to create projects which uses typescript. This project has Documentation(<a href="https://typedoc.org">TypeDoc</a>), Automated Versioning(<a href="https://semver.org/">Semantic Versioning</a>), Unit Testing(<a href="https://jestjs.io">Jest</a>), TypeScript Linting(<a href="https://palantir.github.io/tslint/">TSLint</a>) builtin.</p>
+				<p>For the sake of example say we want to build a library to take man to moon. Let&#39;s name it <code>man-to-moon</code> and replace it with the repository you want to create. Below examples uses this keyword and will demonstrate how to use the template library.</p>
+				<a href="#prerequisites" id="prerequisites" style="color: inherit; text-decoration: none;">
+					<h1>Prerequisites</h1>
+				</a>
+				<p><a href="https://github.com/GrexIt/type-script-template/blob/master/wiki/stuff_to_read.md">WIKI</a></p>
+				<a href="#setup" id="setup" style="color: inherit; text-decoration: none;">
+					<h1>Setup</h1>
+				</a>
+				<p>Edit package.json:</p>
+				<ul>
+					<li>name to <code>@hiver/man-to-moon</code>.</li>
+					<li>version to <code>0.0.1</code></li>
+					<li>add a description</li>
+					<li>change repository: url</li>
+					<li>change bugs: url</li>
+					<li>change homepage to docs url mentioned below</li>
+				</ul>
+				<pre><code class="language-shell">npm install</code></pre>
+				<a href="#how-to-use-man-to-moon" id="how-to-use-man-to-moon" style="color: inherit; text-decoration: none;">
+					<h1>How to use Man-To-Moon</h1>
+				</a>
+				<pre><code class="language-shell">npm install @hiver/man-to-moon</code></pre>
+				<p>In Codebase</p>
+				<pre><code class="language-ts"><span class="hljs-keyword">import</span> ManToMoon <span class="hljs-keyword">from</span> <span class="hljs-string">'@hiver/man-to-moon'</span>;
+<span class="hljs-keyword">import</span> { Chandrayaan } <span class="hljs-keyword">from</span> <span class="hljs-string">'@hiver/man-to-moon'</span>;</code></pre>
+				<a href="#docs" id="docs" style="color: inherit; text-decoration: none;">
+					<h1>Docs</h1>
+				</a>
+				<p>We have to set this up by going to settings of the github and enabling Github pages for this repository. (Select master/docs option to create this link.)</p>
+				<p><a href="https://grexit.github.io/type-script-template/">https://grexit.github.io/type-script-template/</a></p>
+				<a href="#local-development" id="local-development" style="color: inherit; text-decoration: none;">
+					<h1>Local Development</h1>
+				</a>
+				<a href="#to-compile-the-code" id="to-compile-the-code" style="color: inherit; text-decoration: none;">
+					<h2>To compile the code</h2>
+				</a>
+				<pre><code class="language-shell">npm run localw</code></pre>
+				<p>localw runs webpack in watch mode.</p>
+				<a href="#to-see-the-result" id="to-see-the-result" style="color: inherit; text-decoration: none;">
+					<h2>To see the result</h2>
+				</a>
+				<pre><code class="language-shell">npm run serve</code></pre>
+				<a href="#testing" id="testing" style="color: inherit; text-decoration: none;">
+					<h1>Testing</h1>
+				</a>
+				<pre><code class="language-shell">npm run test</code></pre>
+				<a href="#in-watch-mode" id="in-watch-mode" style="color: inherit; text-decoration: none;">
+					<h2>In Watch mode</h2>
+				</a>
+				<pre><code class="language-shell">npm run watch</code></pre>
+				<a href="#releasing-a-version" id="releasing-a-version" style="color: inherit; text-decoration: none;">
+					<h1>Releasing a version</h1>
+				</a>
+				<p>This creates a tag in github repository and which can be used to create a release.</p>
+				<pre><code class="language-shell">npm version [&lt;newversion&gt; | major | minor | patch | premajor | preminor | prepatch | prerelease [--preid=&lt;prerelease-id&gt;] | from-git]</code></pre>
+				<a href="#publishing-to-the-npmjscom" id="publishing-to-the-npmjscom" style="color: inherit; text-decoration: none;">
+					<h2>Publishing to the npmjs.com</h2>
+				</a>
+				<pre><code class="language-shell">npm publish</code></pre>
+				<a href="#to-see-the-published-package" id="to-see-the-published-package" style="color: inherit; text-decoration: none;">
+					<h2>To see the published package</h2>
+				</a>
+				<p><a href="https://www.npmjs.com/settings/hiver/packages">Npm Package List</a></p>
+				<a href="#contributing-enhancing-typescript-template" id="contributing-enhancing-typescript-template" style="color: inherit; text-decoration: none;">
+					<h1>Contributing (Enhancing TypeScript Template)</h1>
+				</a>
+				<pre><code class="language-shell">git clone git@github.com:GrexIt/type-script-template.git &amp;&amp; npm install</code></pre>
+				<ul>
+					<li>Use Visual Studio Code editor</li>
+					<li>Install Tslint</li>
+				</ul>
+			</div>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="globals.html"><em>Globals</em></a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_index_.html">"index"</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-module"><span class="tsd-kind-icon">Module</span></li>
+				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
+				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
+				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+				<li class="tsd-kind-type-alias tsd-has-type-parameter"><span class="tsd-kind-icon">Type alias with type parameter</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+				<li class="tsd-kind-enum-member"><span class="tsd-kind-icon">Enumeration member</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-enum"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-enum"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-interface"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-interface"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class"><span class="tsd-kind-icon">Accessor</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-class"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
+				<li class="tsd-kind-call-signature tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="assets/js/search.js"><' + '/script>');</script>
+</body>
+</html>
