@@ -1,3 +1,5 @@
+[![Maintainability](https://api.codeclimate.com/v1/badges/6247ecd41b6af761b09d/maintainability)](https://codeclimate.com/github/GrexIt/react-ts-template/maintainability)
+
 # TypeScript Template
 
 This repository can be used to create projects which uses typescript. This project has Documentation([TypeDoc](https://typedoc.org)), Automated Versioning([Semantic Versioning](https://semver.org/)), Unit Testing([Jest](https://jestjs.io)), TypeScript Linting([TSLint](https://palantir.github.io/tslint/)) builtin.
