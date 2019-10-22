@@ -2,6 +2,8 @@
 
 This repository can be used to create projects which uses typescript. This project has Documentation([TypeDoc](https://typedoc.org)), Automated Versioning([Semantic Versioning](https://semver.org/)), Unit Testing([Jest](https://jestjs.io)), TypeScript Linting([TSLint](https://palantir.github.io/tslint/)) builtin.
 
+Recent addition Theming Support, Snapshot testing and Continuous Integration using CircleCI.
+
 For the sake of example say we want to build a library to take man to moon. Let's name it `man-to-moon` and replace it with the repository you want to create. Below examples uses this keyword and will demonstrate how to use the template library.
 
 # Prerequisites
