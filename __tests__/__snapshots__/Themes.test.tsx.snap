@@ -9,6 +9,6 @@ exports[`renders correctly 1`] = `
     }
   }
 >
-  Hello from MainScreen!
+  Hello from MainScreen!!
 </p>
 `;
