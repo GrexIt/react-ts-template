@@ -1,14 +1,23 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders correctly 1`] = `
-<p
-  style={
-    Object {
-      "backgroundColor": "white",
-      "fontSize": 45,
+Array [
+  <p
+    style={
+      Object {
+        "backgroundColor": "white",
+        "color": "black",
+        "fontSize": 45,
+      }
     }
-  }
->
-  Hello from MainScreen!!
-</p>
+  >
+    Hello from MainScreen!!
+  </p>,
+  <button
+    onClick={[Function]}
+  >
+    Toggle Theme to 
+    dark
+  </button>,
+]
 `;

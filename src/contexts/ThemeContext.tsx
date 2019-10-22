@@ -2,34 +2,43 @@ import * as React from 'react';
 import dark from './dark';
 import light from './light';
 
-const themes: any = {
+interface Itheme {
+  [themeName: string]: any;
+}
+
+const themes: Itheme = {
   dark,
   light
 };
 
 interface IThemeType {
   changeTheme: (themeType: string) => void;
-  currentTheme: any;
+  currentTheme: Itheme;
+  themeName: string;
 }
 
 const ThemeContext = React.createContext<IThemeType>({
   changeTheme: (themeType: string) => {},
-  currentTheme: {}
+  currentTheme: {},
+  themeName: ''
 });
 
 export const ThemeContextProvider = ({ children }: any) => {
   const [currentTheme, setCurrentTheme] = React.useState(themes.light);
+  const [themeName, setThemeName] = React.useState('light');
 
   const changeTheme = (themeType: string) => {
     const newTheme = themes[themeType];
     setCurrentTheme(newTheme);
+    setThemeName(themeType);
   };
 
   return (
     <ThemeContext.Provider
       value={{
         changeTheme,
-        currentTheme
+        currentTheme,
+        themeName
       }}
     >
       {children}
