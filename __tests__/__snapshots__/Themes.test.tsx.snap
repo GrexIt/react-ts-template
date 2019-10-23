@@ -1,5 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`change to dark theme should work 1`] = `"<p style=\\"font-size: 45px; background-color: black; color: white;\\">Hello from MainScreen!!</p><button>Toggle Theme to light</button>"`;
+exports[`change to dark theme should work 1`] = `"<p style=\\"font-size: 20px; background-color: black; color: white;\\">Hello from MainScreen!!</p><button>Toggle Theme to light</button>"`;
 
-exports[`default light theme 1`] = `"<p style=\\"font-size: 45px; background-color: white; color: black;\\">Hello from MainScreen!!</p><button>Toggle Theme to dark</button>"`;
+exports[`default light theme 1`] = `"<p style=\\"font-size: 20px; background-color: white; color: black;\\">Hello from MainScreen!!</p><button>Toggle Theme to dark</button>"`;
