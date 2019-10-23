@@ -7,7 +7,6 @@ export const ChangeTheme = () => {
 
   const toggleTheme = () => {
     changeTheme(toggleToTheme);
-    console.log('changing the theme');
   };
 
   return (

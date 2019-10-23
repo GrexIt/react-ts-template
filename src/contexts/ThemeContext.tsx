@@ -28,7 +28,6 @@ export const ThemeContextProvider = ({ children }: any) => {
   const [themeName, setThemeName] = React.useState('light');
 
   const changeTheme = (themeType: string) => {
-    console.log('Inside ThemeContextProvider changeTheme ', themeType);
     const newTheme = themes[themeType];
     setCurrentTheme(newTheme);
     setThemeName(themeType);

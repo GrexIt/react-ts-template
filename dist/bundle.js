@@ -32206,7 +32206,6 @@ exports.ThemeContextProvider = function (_a) {
     var _b = React.useState(themes.light), currentTheme = _b[0], setCurrentTheme = _b[1];
     var _c = React.useState('light'), themeName = _c[0], setThemeName = _c[1];
     var changeTheme = function (themeType) {
-        console.log('Inside ThemeContextProvider changeTheme ', themeType);
         var newTheme = themes[themeType];
         setCurrentTheme(newTheme);
         setThemeName(themeType);
@@ -32295,7 +32294,6 @@ var ThemeContext_1 = __webpack_require__(/*! ../contexts/ThemeContext */ "./src/
 var ChangeTheme_1 = __webpack_require__(/*! ./components/ChangeTheme */ "./src/screens/components/ChangeTheme.tsx");
 var Hello_1 = __webpack_require__(/*! ./components/Hello */ "./src/screens/components/Hello.tsx");
 exports.Main = function () {
-    console.log('rendering main');
     return (React.createElement(ThemeContext_1.ThemeContextProvider, null,
         React.createElement(Hello_1.Hello, null),
         React.createElement(ChangeTheme_1.ChangeTheme, null)));
@@ -32321,7 +32319,6 @@ exports.ChangeTheme = function () {
     var toggleToTheme = themeName === 'dark' ? 'light' : 'dark';
     var toggleTheme = function () {
         changeTheme(toggleToTheme);
-        console.log('changing the theme');
     };
     return (React.createElement("button", { onClick: function () {
             toggleTheme();
@@ -32357,9 +32354,8 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var React = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 var ThemeContext_1 = __webpack_require__(/*! ../../contexts/ThemeContext */ "./src/contexts/ThemeContext.tsx");
 exports.Hello = function () {
-    var _a = React.useContext(ThemeContext_1.default), currentTheme = _a.currentTheme, themeName = _a.themeName;
+    var currentTheme = React.useContext(ThemeContext_1.default).currentTheme;
     var fontSize = currentTheme.fontSize, backgroundColor = currentTheme.backgroundColor, color = currentTheme.color;
-    console.log('rendering Hello with themeName ', themeName);
     return (React.createElement("p", { style: __assign(__assign({}, styles.wrapper), { backgroundColor: backgroundColor, fontSize: fontSize, color: color }) }, "Hello from MainScreen!!"));
 };
 var styles = {
