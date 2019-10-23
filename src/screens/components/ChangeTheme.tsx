@@ -3,15 +3,20 @@ import ThemeContext from '../../contexts/ThemeContext';
 
 export const ChangeTheme = () => {
   const { changeTheme, themeName } = React.useContext(ThemeContext);
-  const newTheme = themeName === 'dark' ? 'light' : 'dark';
+  const toggleToTheme = themeName === 'dark' ? 'light' : 'dark';
+
+  const toggleTheme = () => {
+    changeTheme(toggleToTheme);
+    console.log('changing the theme');
+  };
 
   return (
     <button
       onClick={() => {
-        changeTheme(newTheme);
+        toggleTheme();
       }}
     >
-      Toggle Theme to {newTheme}
+      Toggle Theme to {toggleToTheme}
     </button>
   );
 };

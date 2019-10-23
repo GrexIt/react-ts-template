@@ -1,7 +1,7 @@
-const darkTheme = {
+const dark = {
   backgroundColor: 'black',
   color: 'white',
   fontSize: 45
 };
 
-export default darkTheme;
+export default dark;
