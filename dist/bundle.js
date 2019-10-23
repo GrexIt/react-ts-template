@@ -32234,7 +32234,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var dark = {
     backgroundColor: 'black',
     color: 'white',
-    fontSize: 45
+    fontSize: 20
 };
 exports.default = dark;
 
@@ -32254,7 +32254,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var light = {
     backgroundColor: 'white',
     color: 'black',
-    fontSize: 45
+    fontSize: 20
 };
 exports.default = light;
 

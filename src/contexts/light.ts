@@ -1,7 +1,7 @@
 const light = {
   backgroundColor: 'white',
   color: 'black',
-  fontSize: 45
+  fontSize: 20
 };
 
 export default light;
